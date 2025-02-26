@@ -1,0 +1,26 @@
+﻿@model List<CarStore.Models.Car>
+
+<h2>Списък с коли</h2>
+<a asp-controller="Car" asp-action="Create">Добави нова кола</a>
+
+<table border="1">
+    <tr>
+        <th>Марка</th>
+        <th>Модел</th>
+        <th>Година</th>
+        <th>Действия</th>
+    </tr>
+    @foreach (var car in Model)
+    {
+        <tr>
+            <td>@car.Brand</td>
+            <td>@car.Model</td>
+            <td>@car.Year</td>
+            <td>
+                <a asp-controller="Car" asp-action="Details" asp-route-id="@car.Id">Детайли</a> |
+                <a asp-controller="Car" asp-action="Edit" asp-route-id="@car.Id">Редакция</a> |
+                <a asp-controller="Car" asp-action="Delete" asp-route-id="@car.Id">Изтриване</a>
+            </td>
+        </tr>
+    }
+</table>

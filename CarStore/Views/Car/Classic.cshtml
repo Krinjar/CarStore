@@ -1,0 +1,23 @@
+﻿@model List<CarStore.Models.Car>
+
+<h2>Classic Cars</h2>
+<div class="row">
+    @foreach (var car in Model)
+    {
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h4>
+                        <a href="@Url.Action("Details", "Car", new { id = car.Id })">
+                            @($"{car.Brand} {car.Model}")
+                        </a>
+                    </h4>
+                    <p><strong>Price:</strong> $@car.Price</p>
+                    <p><strong>Rating:</strong> ⭐ @car.Rating</p>
+                    <p>@car.Description</p>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+

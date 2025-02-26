@@ -1,0 +1,10 @@
+﻿@model CarStore.Models.Car
+<h2>Редактирай кола</h2>
+<form method="post">
+    <input type="hidden" name="Id" value="@Model.Id" />
+    <label>Марка:</label> <input type="text" name="Brand" value="@Model.Brand" required /><br />
+    <label>Модел:</label> <input type="text" name="Model" value="@Model.Model" required /><br />
+    <label>Година:</label> <input type="number" name="Year" value="@Model.Year" required /><br />
+    <button type="submit">Запази</button>
+</form>
+<a href="/Car/Index">Назад</a>

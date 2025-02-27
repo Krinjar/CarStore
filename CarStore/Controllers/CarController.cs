@@ -7,14 +7,14 @@ namespace CarStore.Controllers
     {
         private static readonly List<Car> Cars = new List<Car>
     {
-        new Car { Brand = "Mercedes", Model = "S-Class", Year = 2023, Price = 120000, Rating = 4.8, Description = "Luxury sedan" },
-        new Car {Brand = "BMW", Model = "7 Series", Year = 2022, Price = 100000, Rating = 4.7, Description = "Luxury sedan"},
+        new Car { Id = 1 , Brand = "Mercedes", Model = "S-Class", Year = 2023, Price = 120000, Rating = 4.8, Description = "Luxury sedan" },
+        new Car { Id = 2 ,Brand = "BMW", Model = "7 Series", Year = 2022, Price = 100000, Rating = 4.7, Description = "Luxury sedan"},
 
-        new Car {Brand = "Ferrari", Model = "Ferrari 488", Year = 2021, Price = 250000, Rating = 4.9, Description = "Luxury sedan"},
-        new Car {Brand = "Lamborghini", Model = "Lamborghini Huracan", Year = 2022, Price = 270000, Rating = 5.0, Description = "Luxury sedan"},
+        new Car { Id = 3 ,Brand = "Ferrari", Model = "Ferrari 488", Year = 2021, Price = 250000, Rating = 4.9, Description = "Luxury sedan"},
+        new Car { Id = 4 ,Brand = "Lamborghini", Model = "Lamborghini Huracan", Year = 2022, Price = 270000, Rating = 5.0, Description = "Luxury sedan"},
 
-        new Car {Brand = "Ford", Model = "Ford Mustang 1969", Year = 1969, Price = 80000, Rating = 4.6, Description = "Luxury sedan"},
-        new Car {Brand = "Chevrolet", Model = "Chevrolet Impala 1967", Year = 1967, Price = 75000, Rating = 4.5, Description = "Luxury sedan"}
+        new Car { Id = 5 ,Brand = "Ford", Model = "Ford Mustang 1969", Year = 1969, Price = 80000, Rating = 4.6, Description = "Luxury sedan"},
+        new Car { Id = 6 ,Brand = "Chevrolet", Model = "Chevrolet Impala 1967", Year = 1967, Price = 75000, Rating = 4.5, Description = "Luxury sedan"}
     };
 
     public IActionResult Luxury()
